@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Kubera & Guest House</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+        .header {
+            background-color: #d4af37;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            color: #fff;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .contact-top {
+            text-align: right;
+            font-size: 16px;
+        }
+        .contact-top i, .contact-bottom i {
+            color: green; /* Green color for phone icon */
+            font-size: 24px;
+            margin-right: 5px;
+        }
+        .contact-top i.phone-number, .contact-bottom i.phone-number {
+            color: green;
+        }
+        .hero {
+			height: 0;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9/16 = 0.5625) */
+            position: relative;
+            overflow: hidden;
+        }
+        .slide {
+		    position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+			opacity: 0; /* ADD THIS BACK */
+			transition: opacity 1s ease-in-out; /* ADD THIS BACK */
+		       }
+        .slide.active {
+            opacity: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+        .hero h1 {
+            font-size: 40px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .description {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 22px;
+            background: #fff;
+            color: #333;
+            line-height: 1.8;
+            font-family: 'Arial', sans-serif;
+        }
+        .description p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+        .image-grid {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+            background: #fff;
+        }
+        .image-grid img {
+            width: 260px;
+            height: 260px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .triangle-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+        }
+        .triangle-images img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-bottom {
+            text-align: center;
+            padding: 30px;
+            background-color: #d4af37;
+            color: #fff;
+        }
+        .contact-bottom p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #b8860b;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #a07d00;
+        }
+
+        /* Amenities Section */
+        .amenities {
+            padding: 40px;
+            background: #f5f5f5;
+            text-align: center;
+        }
+
+        .amenities h2 {
+            font-size: 30px;
+            font-weight: bold;
+            color: #d4af37;
+            margin-bottom: 20px;
+        }
+
+        .amenities ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .amenities ul li {
+            font-size: 18px;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>Welcome to Hotel Kubera & Guest House</div>
+        <div class="contact-top">
+            <i class="fas fa-phone-alt"></i> <span style="font-size: 20px;">09998825887</span> | 
+            <i class="fas fa-phone-alt"></i> <span style="font-size: 20px;">9537333579</span>
+        </div>
+    </div>
+    
+    <div class="hero">
+        <!-- Slideshow images -->
+        <div class="slide" style="background-image: url('C:/Users/harshita/Pictures/pics/Hotel1.jpg');"></div>
+        <div class="slide" style="background-image: url('C:/Users/harshita/Pictures/pics/Hotel2.jpg');"></div>
+        <div class="slide" style="background-image: url('C:/Users/harshita/Pictures/pics/Hotel3.png');"></div>
+    </div>
+    
+    <div class="description">
+        <p>Hotel Kubera & Guest House—your cozy, budget-friendly retreat near Vrindavan Studio, Umbergaon Beach, and the Umbergaon industrial area. Enjoy clean, comfortable rooms, personalized food options, and warm hospitality, whether you're here for work or relaxation. Affordable comfort, peaceful vibes, and a prime location—book your stay today!</p>
+    </div>
+    <div class="image-grid">
+        <img src="C:\Users\harshita\Pictures\pics\Image 4.jpg" alt="Feature 1">
+        <img src="C:\Users\harshita\Pictures\pics\Image 2.JPG" alt="Feature 2">
+        <img src="C:\Users\harshita\Pictures\pics\Room1.png" alt="Feature 3">
+        <img src="C:\Users\harshita\Pictures\pics\Room 2.png" alt="Feature 4">
+    </div>
+    <div class="triangle-images">
+        <img src="C:\Users\harshita\Pictures\pics\Dal Rice.png" alt="Scenery 1">
+        <img src="C:\Users\harshita\Pictures\pics\Dosa1.png" alt="Scenery 2">
+        <img src="C:\Users\harshita\Pictures\pics\Menduvada.png" alt="Scenery 3">
+    </div>
+    
+    <!-- Amenities Section -->
+    <div class="amenities">
+        <h2>Amenities</h2>
+        <ul>
+            <li><strong>Parking Available</strong></li>
+            <li><strong>Wi-Fi</strong> - High-speed internet access</li>
+            <li><strong>AC & Non-AC Rooms</strong> - Comfortable rooms with both options</li>
+            <li><strong>Power Backup Available</strong></li>
+        </ul>
+    </div>
+
+    <div class="contact-bottom">
+        <h2>Contact Us</h2>
+        <p><i class="fas fa-map-marker-alt"></i> 📍 Address: Plot no 701/3, GIDC 3rd phase, opp. viral corp, Umargam, Gujarat 396171, India</p>
+        <p><i class="fas fa-phone-alt"></i> 📞 Phone: <span style="font-size: 20px;">+9998825887</span> | <span style="font-size: 20px;">+9537333579</span></p>
+        <p><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps?q=Plot+no+701%2F3%2C+GIDC+3rd+phase%2C+opp.+viral+corp%2C+Umargam%2C+Gujarat+396171%2C+India" target="_blank" style="color: #fff;">Get Directions</a></p>
+    </div>
+
+    <!-- Font Awesome for phone icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <script>
+        // Slideshow functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slide');
+            let currentSlide = 0;
+            
+            // Show first slide
+            slides[currentSlide].classList.add('active');
+            
+            // Change slide every 5 seconds
+            setInterval(nextSlide, 5000);
+            
+            function nextSlide() {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
